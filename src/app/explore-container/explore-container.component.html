@@ -1,4 +1,17 @@
-<div id="container">
-  <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-</div>
+<label for="upload">
+  <section class="avatar-container">
+    <figure style="background-color: rgb(54, 54, 54); display: flex; justify-content: center; ">
+      <ion-avatar style="background-color: rgb(134, 133, 133);">
+        <ion-img [src]="webviewPath"></ion-img>
+      </ion-avatar>
+    </figure>
+  </section>
+  <input
+    id="upload"
+    #inputcamera
+    type="file"
+    accept="image/*"
+    style="display: none"
+    (change)="onFileChoose($event)"
+  />
+</label>
