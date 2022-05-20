@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "poc",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
